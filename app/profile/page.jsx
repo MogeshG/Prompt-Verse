@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import Profile from "@components/Profile";
+import Profile from "@components/profile";
 
 const MyProfile = () => {
   const { data: session } = useSession();
@@ -37,7 +37,6 @@ const MyProfile = () => {
 
         const fileteredPosts = posts.filter((p) => p._id !== post._id);
         setPosts(fileteredPosts);
-
       } catch (err) {
         console.log(err);
       }
