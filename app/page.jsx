@@ -1,4 +1,5 @@
-import Feed from "@components/feed";
+import Feed from "@components/Feed";
+
 const Home = () => {
   return (
     <div>
@@ -10,7 +11,7 @@ const Home = () => {
         </h1>
         <p>PromptVerse is a open source AI prompt tool to create and share your prompts</p>
       </section>
-      <Feed />
+    <Feed />
     </div>
   );
 };
